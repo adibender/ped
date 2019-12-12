@@ -63,9 +63,11 @@
 
 \method{filter}{ped}(.data, ...)
 
-\method{sample_n}{ped}(tbl, size, replace = FALSE, weight = NULL, .env = NULL, ...)
+\method{sample_n}{ped}(tbl, size, replace = FALSE, weight = NULL,
+  .env = NULL, ...)
 
-\method{sample_frac}{ped}(tbl, size = 1, replace = FALSE, weight = NULL, .env = NULL, ...)
+\method{sample_frac}{ped}(tbl, size = 1, replace = FALSE,
+  weight = NULL, .env = NULL, ...)
 
 \method{slice}{ped}(.data, ...)
 
@@ -81,29 +83,17 @@
 
 \method{transmute}{ped}(.data, ...)
 
-\method{inner_join}{ped}(x, y, by = NULL, copy = FALSE, suffix = c(".x", ".y"), ...)
+\method{inner_join}{ped}(x, y, by = NULL, copy = FALSE,
+  suffix = c(".x", ".y"), ...)
 
-\method{full_join}{ped}(x, y, by = NULL, copy = FALSE, suffix = c(".x", ".y"), ...)
+\method{full_join}{ped}(x, y, by = NULL, copy = FALSE,
+  suffix = c(".x", ".y"), ...)
 
-\method{left_join}{ped}(
-  x,
-  y,
-  by = NULL,
-  copy = FALSE,
-  suffix = c(".x", ".y"),
-  ...,
-  keep_attributes = TRUE
-)
+\method{left_join}{ped}(x, y, by = NULL, copy = FALSE,
+  suffix = c(".x", ".y"), ..., keep_attributes = TRUE)
 
-\method{right_join}{ped}(
-  x,
-  y,
-  by = NULL,
-  copy = FALSE,
-  suffix = c(".x", ".y"),
-  ...,
-  keep_attributes = TRUE
-)
+\method{right_join}{ped}(x, y, by = NULL, copy = FALSE,
+  suffix = c(".x", ".y"), ..., keep_attributes = TRUE)
 
 \method{arrange}{nested_fdf}(.data, ...)
 
@@ -113,9 +103,11 @@
 
 \method{filter}{nested_fdf}(.data, ...)
 
-\method{sample_n}{nested_fdf}(tbl, size, replace = FALSE, weight = NULL, .env = NULL, ...)
+\method{sample_n}{nested_fdf}(tbl, size, replace = FALSE,
+  weight = NULL, .env = NULL, ...)
 
-\method{sample_frac}{nested_fdf}(tbl, size = 1, replace = FALSE, weight = NULL, .env = NULL, ...)
+\method{sample_frac}{nested_fdf}(tbl, size = 1, replace = FALSE,
+  weight = NULL, .env = NULL, ...)
 
 \method{slice}{nested_fdf}(.data, ...)
 
@@ -131,29 +123,17 @@
 
 \method{transmute}{nested_fdf}(.data, ...)
 
-\method{inner_join}{nested_fdf}(x, y, by = NULL, copy = FALSE, suffix = c(".x", ".y"), ...)
+\method{inner_join}{nested_fdf}(x, y, by = NULL, copy = FALSE,
+  suffix = c(".x", ".y"), ...)
 
-\method{full_join}{nested_fdf}(x, y, by = NULL, copy = FALSE, suffix = c(".x", ".y"), ...)
+\method{full_join}{nested_fdf}(x, y, by = NULL, copy = FALSE,
+  suffix = c(".x", ".y"), ...)
 
-\method{left_join}{nested_fdf}(
-  x,
-  y,
-  by = NULL,
-  copy = FALSE,
-  suffix = c(".x", ".y"),
-  ...,
-  keep_attributes = TRUE
-)
+\method{left_join}{nested_fdf}(x, y, by = NULL, copy = FALSE,
+  suffix = c(".x", ".y"), ..., keep_attributes = TRUE)
 
-\method{right_join}{nested_fdf}(
-  x,
-  y,
-  by = NULL,
-  copy = FALSE,
-  suffix = c(".x", ".y"),
-  ...,
-  keep_attributes = TRUE
-)
+\method{right_join}{nested_fdf}(x, y, by = NULL, copy = FALSE,
+  suffix = c(".x", ".y"), ..., keep_attributes = TRUE)
 }
 \arguments{
 \item{.data}{an  object of class \code{ped}, see \code{\link{as_ped}}.}
@@ -213,6 +193,8 @@ Should be a character vector of length 2.}
 \item{funs}{see \code{\link[dplyr]{summarize_all}}}
 
 \item{.dots}{see \code{dplyr} documentation}
+
+\item{keep_attributes}{conserve attributes? defaults to \code{TRUE}}
 }
 \value{
 a modified \code{ped} object (except for \code{do})

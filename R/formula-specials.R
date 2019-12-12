@@ -310,6 +310,9 @@ add_cumulative <- function(ped, data, formula) {
 
 }
 
+
+#' @keywords internal
+#' @export
 make_mat_names <- function(x, ...) {
   UseMethod("make_mat_names", x)
 }
