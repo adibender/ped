@@ -1,0 +1,33 @@
+Package: ped
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R:
+    person(given = "Andreas",
+           family = "Bender",
+           role = c("aut", "cre"),
+           email = "bender.at.R@gmail.com",
+           comment = c(ORCID = "0000-0001-5628-8611"))
+Description: Transforms data from "standard" time-to-event data format to the piece-wise exponential data (PED) format.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.3.0)
+Imports:
+    survival,
+    checkmate,
+    magrittr,
+    rlang,
+    tidyr (>= 0.8.3),
+    dplyr (>= 0.7.0),
+    purrr (>= 0.2.3),
+    tibble,
+    ggplot2,
+    lazyeval,
+    Formula,
+Suggests:
+    testthat,
+    knitr,
+    rmarkdown
+RoxygenNote: 7.0.1
+VignetteBuilder: knitr

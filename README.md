@@ -1,2 +1,2 @@
 # ped
-Piece-wise exponential data
+Piece-wise exponential data (PED)
